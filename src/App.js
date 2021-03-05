@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import App1 from "./component/App1";
+import User from "./component/User";
+import Homecontainer from "./container/Homecontainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <p><span class="realistic-marker-highlight">pass data one component to another and get data with props</span></p>
+      <App1/>
+      <User data = {{name : "Swati Rathore" ,age: 23}}/>
+      <p>Desgin for add to cart</p>
+      <Homecontainer/>  
+    </>
   );
 }
 
