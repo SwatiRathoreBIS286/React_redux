@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
 import App1 from "./component/App1";
 import User from "./component/User";

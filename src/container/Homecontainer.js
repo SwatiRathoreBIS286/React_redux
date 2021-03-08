@@ -1,5 +1,19 @@
+import {connect} from 'react-redux';
+import Home from "../component/Home";
+import {addToCard} from  '../Services/Action/action';
 
-import Home from "../component/Home"
+const mapStateToProps= state=>({
+    cardData: state.cardItems
 
-export default Home;
+})
+
+const mapDispatchToProps = dispatch=>({
+    addToCardHandler : data =>dispatch(addToCard(data))
+})
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
+
+
+// export default Home;
 
